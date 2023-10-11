@@ -1,17 +1,17 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Item, Status } from '@components';
+import { Button } from '@components';
 
-describe('Testing Item Component', () => {
+describe('Testing Button Component', () => {
     beforeEach(() => {
         // fetchMock.resetMocks();
-        render(<Item name='Item Test' status={Status.DONE} handleChange={ () => {}} />)
+        render(<Button />)
     });
-    it('Show Item Name', async () => {
+    it('Show Button', async () => {
         /* fetchMock.mockResponseOnce(JSON.stringify({
             //First Data Fetch
             data: 'data'
         })); */
-        screen.getByText('Item Test')
+        expect(screen.getByRole('button')).toBeInTheDocument();
     })
 })

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Item, Status } from '@components';
 
-describe('Testing Card Component', () => {
+describe('Testing Item Component', () => {
   beforeEach(() => {
     cy.mount(<Item name='Item Test' status={Status.DONE} />);
   })
