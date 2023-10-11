@@ -33,7 +33,10 @@
       "noImplicitAny": false,
       "paths": {
         "@components/*": ["src/components/*"],
-        "@components": ["src/components"]
+        "@components": ["src/components"],
+        "@styles": ["src/styles"],
+        "@utils/*": ["src/utils/*"],
+        "@utils": ["src/utils"]
       }
     },
     "include": [

@@ -1,0 +1,19 @@
+.removeButton {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+    svg {
+        color: #FF6955;
+        transition: 0.3s ease-in-out;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #bc2d1a;
+        }
+    }
+
+}
