@@ -1,15 +1,15 @@
 # Create React Component Library
 
-This project aims to have a starter kit for creating a new React Library with storybook.
+This project is a React Library with storybook for a List App.
 
 ## Setup
-To create a new project run in the terminal:
+First clone the repo:
 ```
-npx @aleleba/create-react-component-library react-library
+git clone git@github.com:aleleba/react-list-ui-library.git
 ```
 Then run:
 ```
-cd react-library
+cd react-list-ui-library
 ```
 You will need to create a new .env file at the root of the project for global config.
 This is an exaple of config.
