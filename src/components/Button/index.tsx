@@ -4,7 +4,7 @@ import { RemoveButton } from './RemoveButton';
 
 type TButtonProps = {
   /**
-   * Is this the title of the card.
+   * Is this the type of the Button (Add or Remove).
    */
   type?: ButtonTypes,
   /**

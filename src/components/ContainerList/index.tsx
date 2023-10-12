@@ -3,11 +3,11 @@ import './style.scss';
 
 type TContainerListProps = {
   /**
-   * Is this the title of the card.
+   * Is this the title of the Container List.
    */
   title?: string,
   /**
-   * Is this the child component of the card. (The content)
+   * Is this the child component of the Container List. (The content)
    */
   children?: JSX.Element,
 };

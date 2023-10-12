@@ -5,23 +5,27 @@ import { on } from 'events';
 
 type TListProps = {
   /**
-   * Is this the title of the card.
+   * Is this the list of items as an array.
    */
   list: TItem[]
   /**
-   * Is this the title of the card.
+   * Is this the text of the placeholder of the input of the List.
    */
   placeholderInput?: string
   /**
-     * Is this the onChange event of the input
-     */
+   * Is this the text of the value of the input of the List.
+   */
+  valueInput?: string
+  /**
+   * Is this the onChange event of the input to add 
+   */
   onChangeInput?: ChangeEventHandler<HTMLInputElement>
   /**
-   * Is this the onClick Event of the button.
+   * Is this the onClick Event of the button to add an item.
    */
   onClickAddItem?: MouseEventHandler<HTMLButtonElement> | undefined
   /**
-   * Is this the onClick Event of the button.
+   * Is this the onClick Event of the button to Remove a Item.
    */
   onClickRemoveItem?: ((index: number) => void)
   /**
@@ -33,6 +37,7 @@ type TListProps = {
 const List: FC<TListProps> = ({
   list,
   placeholderInput,
+  valueInput = '',
   onChangeInput,
   onClickAddItem,
   onClickRemoveItem,
@@ -60,6 +65,7 @@ const List: FC<TListProps> = ({
       <div>
         <Input 
           placeholder={placeholderInput}
+          value={valueInput}
           onChange={onChangeInput}
         />
       </div>

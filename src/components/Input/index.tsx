@@ -7,6 +7,10 @@ export type TInputProps = {
      */
     placeholder?: string
     /**
+     * Is this the value of the input
+     */
+    value?: string
+    /**
      * Is this the onChange event of the input
      */
     onChange?: ChangeEventHandler<HTMLInputElement>
@@ -14,9 +18,10 @@ export type TInputProps = {
 
 export const Input:FC<TInputProps> = ({
     placeholder = '',
+    value = '',
     onChange = (e) => {}
 }) => {
     return(
-        <input className='input' placeholder={placeholder} type='text' onChange={onChange} />
+        <input className='input' value={value} placeholder={placeholder} type='text' onChange={onChange} />
     )
 }
