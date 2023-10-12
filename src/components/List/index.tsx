@@ -23,11 +23,11 @@ type TListProps = {
   /**
    * Is this the onClick Event of the button.
    */
-  onClickRemoveItem?: MouseEventHandler<HTMLButtonElement> |undefined
+  onClickRemoveItem?: ((index: number) => void)
   /**
    * Is this the on Event triggered by the checkbox.
    */
-  handleChangeState?: ChangeEventHandler<HTMLInputElement>
+  handleChangeState?: ((index: number) => void)
 };
 
 const List: FC<TListProps> = ({
@@ -44,12 +44,12 @@ const List: FC<TListProps> = ({
         <tbody>
           { list !== undefined && list.map((item, index) => (
             <tr key={index}>
-              <td><Item name={item.name} status={item.status} handleChange={handleChangeState} /></td>
+              <td><Item name={item.name} status={item.status} handleChange={ () => handleChangeState !== undefined ? handleChangeState(index) : undefined} /></td>
               <td>
                 <div className="delete-button-container">
                   <Button 
                     type={ButtonTypes.REMOVE}
-                    onClick={onClickRemoveItem}
+                    onClick={ () => onClickRemoveItem !== undefined ? onClickRemoveItem(index) : undefined }
                   />
                 </div>
               </td>
