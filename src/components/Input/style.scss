@@ -1,10 +1,11 @@
 .input{
-    width: 100%;
+    width: 95%;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 50px;
     font-size: 16px;
     outline: none;
+    padding-left: 15px;
     &:focus{
         border: 1px solid #000;
     }
