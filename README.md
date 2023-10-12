@@ -1,4 +1,4 @@
-# Create React Component Library
+# React List UI Library
 
 This project is a React Library with storybook for a List App.
 
