@@ -21,6 +21,6 @@ describe('Testing List Component', () => {
     />);
   })
   it('Show All Items in a list', () => {
-    cy.get('[role="textbox"]').should('have.length', 3);
+    cy.get('[role="checkbox"]').should('have.length', 3);
   })
 })
