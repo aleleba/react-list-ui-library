@@ -1,19 +1,19 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import { Card } from '@components';
+import { Input } from '@components';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Card',
-  component: Card,
-} as Meta<typeof Card>;
+  title: 'List Design System/Input',
+  component: Input,
+} as Meta<typeof Input>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: StoryFn<typeof Card> = (args) => <Card {...args} />;
+const Template: StoryFn<typeof Input> = (args) => <Input {...args} />;
 
 export const Basic = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Basic.args = {
-  title: 'Test Title',
-  children: <p>Test Content</p>,
+  placeholder: 'Basic Input',
+  onChange: (e) => { console.log(e.target.value) }
 };

@@ -1,8 +1,8 @@
 {
   "name": "react-list-ui-library",
-  "version": "0.0.1",
-  "description": "A starter kit for create a React component Library with storybook",
-   "main": "dist/index.js",
+  "version": "1.0.0",
+  "description": "A Library with storybook for a list app",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run storybook",
     "build": "webpack",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleleba/create-react-component-library.git"
+    "url": "git+https://github.com/aleleba/react-list-ui-library.git"
   },
   "keywords": [
     "create",
@@ -39,6 +39,11 @@
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.0",
     "@babel/register": "^7.22.15",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/react": "^2.3.0",
     "@storybook/addon-actions": "^7.4.6",
     "@storybook/addon-docs": "^7.4.6",
