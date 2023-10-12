@@ -45,3 +45,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci --legacy-peer-deps
       - run: npm run build
+        env:
+          LIBRARY_NAME: "@aleleba/ro-ut-ui"
+          EXTERNAL_CSS: "true"

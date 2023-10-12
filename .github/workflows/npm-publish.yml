@@ -38,6 +38,12 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci --legacy-peer-deps
+      - run: npm run build
+        env:
+          LIBRARY_NAME: "@aleleba/ro-ut-ui"
+          EXTERNAL_CSS: "true"
       - run: npm publish --access=public
         env:
+          LIBRARY_NAME: "@aleleba/ro-ut-ui"
+          EXTERNAL_CSS: "true"
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

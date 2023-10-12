@@ -1,7 +1,7 @@
 {
   "name": "react-list-ui-library",
   "version": "1.0.0",
-  "description": "A starter kit for create a React component Library with storybook",
+  "description": "A Library with storybook for a list app",
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run storybook",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleleba/create-react-component-library.git"
+    "url": "git+https://github.com/aleleba/react-list-ui-library.git"
   },
   "keywords": [
     "create",
